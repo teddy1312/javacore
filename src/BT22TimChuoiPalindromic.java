@@ -10,5 +10,11 @@ public class BT22TimChuoiPalindromic {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         String chuoi = scan.nextLine();
+
+
+    }
+
+    private static void timPalindromic(String chuoi){
+
     }
 }
