@@ -13,17 +13,17 @@ public class BT22TimChuoiPalindromic {
         String chuoi = scan.nextLine();
 
         // Tìm chuỗi Palindromic chẵn
-        String ketQua1 = timEvenPalindromic(chuoi);
-        if(ketQua1.length() != 0){
-            System.out.println("Chuỗi Palindromic(even) có độ dài dài nhất là: "+ketQua1);
+        String ketQuaChan = timEvenPalindromic(chuoi);
+        if(ketQuaChan.length() != 0){
+            System.out.println("Chuỗi Palindromic(even) có độ dài dài nhất là: "+ketQuaChan);
         } else{
             System.out.println("Không có chuỗi Palindromic(even)");
         }
 
         // Tìm chuỗi Palindromic lẻ
-        String ketQua2 = timOddPalindromic(chuoi);
-        if(ketQua2.length() != 0){
-            System.out.println("Chuỗi Palindromic(odd) có độ dài dài nhất là: "+ketQua2);
+        String ketQuaLe = timOddPalindromic(chuoi);
+        if(ketQuaLe.length() != 0){
+            System.out.println("Chuỗi Palindromic(odd) có độ dài dài nhất là: "+ketQuaLe);
         } else{
             System.out.println("Không có chuỗi Palindromic(odd)");
         }
@@ -33,7 +33,7 @@ public class BT22TimChuoiPalindromic {
     private static String timEvenPalindromic(String chuoi){
         char[] ch1 = new char[1];
         char[] ch2 = new char[1];
-        String chuoiKQ = "";
+        String chuoiKetQua = "";
         String chuoiTam = "";
         for(int i=1;i<chuoi.length();i++){
             for(int j=0;(i+j)<chuoi.length() && (i-j)>0;){
@@ -46,16 +46,16 @@ public class BT22TimChuoiPalindromic {
                     break;
                 }
             }
-            if(chuoiTam.length()>chuoiKQ.length())   chuoiKQ = chuoiTam;
+            if(chuoiTam.length()>chuoiKetQua.length())   chuoiKetQua = chuoiTam;
         }
 
-        return chuoiKQ;
+        return chuoiKetQua;
     }
 
     private static String timOddPalindromic(String chuoi){
         char[] ch1 = new char[1];
         char[] ch2 = new char[1];
-        String chuoiKQ = "";
+        String chuoiKetQua = "";
         String chuoiTam = "";
         for(int i=1;i<chuoi.length()-1;i++){
             for(int j=1;(i+j)<chuoi.length() && (i+1-j)>0;){
@@ -68,9 +68,9 @@ public class BT22TimChuoiPalindromic {
                     break;
                 }
             }
-            if(chuoiTam.length()>chuoiKQ.length())   chuoiKQ = chuoiTam;
+            if(chuoiTam.length()>chuoiKetQua.length())   chuoiKetQua = chuoiTam;
         }
 
-        return chuoiKQ;
+        return chuoiKetQua;
     }
 }
