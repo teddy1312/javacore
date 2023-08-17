@@ -66,5 +66,8 @@ public class BT02ChuyenDoHeCoSo {
     }
 
     // Git conflict 123
+    // Add some thing 2
+
+    // Git conflict
 
 }
