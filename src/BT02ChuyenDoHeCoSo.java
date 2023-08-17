@@ -65,6 +65,6 @@ public class BT02ChuyenDoHeCoSo {
         System.out.println("Số "+chuoiBinary+" có hệ cơ số thập phân là "+soDecimal);
     }
 
-    // Git conflict
+    // Git conflict 123
 
 }
